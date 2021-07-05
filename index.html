@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,9 @@
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive website food edited</title>
+        <title>Sup dy | O seu Delivery de Supermercados</title>
+
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
     </head>
     <body>
 
@@ -22,19 +24,31 @@
         <!--========== HEADER ==========-->
         <header class="l-header" id="header">
             <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Tasty</a>
+                <a href="#" class="nav__logo">Supdy</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre nós</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Serviços</a></li>
                         <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Fale Conosco</a></li>
+
+                        <div class="right-menu">
+                            <a href="javascript:void(0);" class="user">
+                                <i class="far fa-user"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-shopping-cart">
+                                    <span class="num-cart-product">3</span>
+                                </i>
+                            </a>
+                        </div>
 
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
                 </div>
+                
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
@@ -47,9 +61,9 @@
             <section class="home" id="home">
                 <div class="home__container bd-container bd-grid">
                     <div class="home__data">
-                        <h1 class="home__title">Tasty food</h1>
-                        <h2 class="home__subtitle">Try the best food of <br> the week.</h2>
-                        <a href="#" class="button">View Menu</a>
+                        <h1 class="home__title">Sup dy</h1>
+                        <h2 class="home__subtitle"><strong>O melhor jeito de pedir suas compras.</strong></h2>
+                        <a href="#menu" class="button">Ver Menu</a>
                     </div>
     
                     <img src="assets/img/home.png" alt="" class="home__img">
@@ -60,9 +74,9 @@
             <section class="about section bd-container" id="about">
                 <div class="about__container  bd-grid">
                     <div class="about__data">
-                        <span class="section-subtitle about__initial">About us</span>
-                        <h2 class="section-title about__initial">We cook the best <br> tasty food</h2>
-                        <p class="about__description">We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
+                        <span class="section-subtitle about__initial">Sobre nós</span>
+                        <h2 class="section-title about__initial">Nós te aproximamos <br> da mehor comida.</h2>
+                        <p class="about__description">Trazendo praticidade ao seu dia-a-dia, com excelentes serviços e com as melhores ofertas. Seja Bem vindo.</p>
                         <a href="#" class="button">Explore history</a>
                     </div>
 
@@ -72,8 +86,8 @@
 
             <!--========== SERVICES ==========-->
             <section class="services section bd-container" id="services">
-                <span class="section-subtitle">Offering</span>
-                <h2 class="section-title">Our amazing services</h2>
+                <span class="section-subtitle">Apresentando</span>
+                <h2 class="section-title">Nossos melhores serviços</h2>
 
                 <div class="services__container  bd-grid">
                     <div class="services__content">
@@ -138,8 +152,8 @@
                             16.8875 47.057C17.3045 47.4744 17.9811 47.4746 18.3984 47.0576C18.8157 
                             46.6405 18.816 45.964 18.3989 45.5466Z"/>
                         </svg>
-                        <h3 class="services__title">Excellent food</h3>
-                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                        <h3 class="services__title">Produtos excelentes</h3>
+                        <p class="services__description">Nós ofertamos produtos de qualidade para os melhores supermercados da cidade.</p>
                     </div>
 
                     <div class="services__content">
@@ -296,7 +310,7 @@
                             </defs>
                         </svg>
                         <h3 class="services__title">Fast food</h3>
-                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                        <p class="services__description">Aqui você ainda encontra espaço para pedir no seu fast-food favorito.</p>
                     </div>
 
                     <div class="services__content">
@@ -352,41 +366,118 @@
                                 </defs>
                         </svg>
                         <h3 class="services__title">Delivery</h3>
-                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                        <p class="services__description">Nós recebemos os seus pedidos 24h ao dia, para que os nossos supermercados parceiros realizem a entraga com agilidade.</p>
                     </div>
                 </div>
             </section>
 
             <!--========== MENU ==========-->
             <section class="menu section bd-container" id="menu">
-                <span class="section-subtitle">Special</span>
-                <h2 class="section-title">Menu of the week</h2>
+                <span class="section-subtitle">Especial</span>
+                <h2 class="section-title">Bebidas para semana</h2>
 
-                <div class="menu__container bd-grid">
+                <div class="menu__container bd-grid" id="produtos">
                     <div class="menu__content">
-                        <img src="assets/img/plate1.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Barbecue salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$22.00</span>
+                        <img src="assets/img/brahmaDM.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Brahma Duplo Malte 350ml</h3>
+                        <span class="menu__detail">Uma cerveja que tem mais sabor, mas ainda mantém a leveza.</span>
+                        <span class="menu__preci">R$2,99</span>
                         <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
                     </div>
 
                     <div class="menu__content">
-                        <img src="assets/img/plate2.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Salad with fish</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$12.00</span>
+                        <img src="assets/img/Itambe1L.png" alt="" class="menu__img">
+                        <h3 class="menu__name">BEBIDA LÁCTEA CHOCOLATE 1L</h3>
+                        <span class="menu__detail">Rico em vitaminas, fácil de guardar e prático de beber. Ideal para saborear com toda família.</span>
+                        <span class="menu__preci">R$3.99</span>
                         <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
                     </div>
                     
                     <div class="menu__content">
-                        <img src="assets/img/plate3.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Spinach salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$9.50</span>
+                        <img src="assets/img/itaipava.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Cerveja ITAIPAVA Lata 350ml</h3>
+                        <span class="menu__detail">Itaipava é uma cerveja nobre, com sabor e aromas incomparáveis.</span>
+                        <span class="menu__preci">R$1,99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/h2o.png" alt="" class="menu__img">
+                        <h3 class="menu__name">H20H! Limão 310ml</h3>
+                        <span class="menu__detail">Bebida levemente gaseificada, com zero de açúcar, fonte de vitaminas B e suco natural de limão.</span>
+                        <span class="menu__preci">R$2.50</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/pepsi.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Refrigerante Pepsi 269ml</h3>
+                        <span class="menu__detail">Muito apreciada por seu paladar suave e refrescante, é ideal para acompanhar refeições em ocasiões especiais ou do dia a dia.</span>
+                        <span class="menu__preci">R$1,79</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/fusion.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Energético Fusion 250ml</h3>
+                        <span class="menu__detail">Fusion é feito para quem curte a noite intensamente e está sempre pronto para a próxima.</span>
+                        <span class="menu__preci">R$3,99</span>
                         <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
                     </div>
                 </div>
+
+                <h2 class="section-title">Massas para semana</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/espaguete.png" alt="" class="menu__img">
+                        <h3 class="menu__name">MASSA COM OVOS ESPAGUETE Nº 3</h3>
+                        <span class="menu__detail">Grãos de trigo selecionados e enriquecidos com ovos, que conferem a aela sabor leve e delicado, além de textura al dente.</span>
+                        <span class="menu__preci">R$2,99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/Itambe1L.png" alt="" class="menu__img">
+                        <h3 class="menu__name">BEBIDA LÁCTEA CHOCOLATE 1L</h3>
+                        <span class="menu__detail">Rico em vitaminas, fácil de guardar e prático de beber. Ideal para saborear com toda família.</span>
+                        <span class="menu__preci">R$3.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/itaipava.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Cerveja ITAIPAVA Lata 350ml</h3>
+                        <span class="menu__detail">Itaipava é uma cerveja nobre, com sabor e aromas incomparáveis.</span>
+                        <span class="menu__preci">R$1,99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/h2o.png" alt="" class="menu__img">
+                        <h3 class="menu__name">H20H! Limão 310ml</h3>
+                        <span class="menu__detail">Bebida levemente gaseificada, com zero de açúcar, fonte de vitaminas B e suco natural de limão.</span>
+                        <span class="menu__preci">R$2.50</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/pepsi.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Refrigerante Pepsi 269ml</h3>
+                        <span class="menu__detail">Muito apreciada por seu paladar suave e refrescante, é ideal para acompanhar refeições em ocasiões especiais ou do dia a dia.</span>
+                        <span class="menu__preci">R$1,79</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/fusion.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Energético Fusion 250ml</h3>
+                        <span class="menu__detail">Fusion é feito para quem curte a noite intensamente e está sempre pronto para a próxima.</span>
+                        <span class="menu__preci">R$3,99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+
             </section>
 
             <!--===== APP =======-->
